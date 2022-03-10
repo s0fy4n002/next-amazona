@@ -12,8 +12,9 @@ kosongkan passpharase
 akan ada file .pub
 
 kaitkan akun ssh anda
-ssh-add ~/.ssh/id_anda
-cek apakah sdh terkait dgn perintah "ssh-add -l"
+ssh-agent /bin/bash -> untuk menjalankan ssh agent
+ssh-add ~/.ssh/id_anda -> load ssh key
+ssh-add -l -> cek apakah sdh terkait dgn perintah 
 copy paste id_ssh.pub ke github
 uji konektifitas dgn ketik "ssh -T git@github.com"
 authenticated
