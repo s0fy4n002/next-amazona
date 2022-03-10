@@ -60,10 +60,7 @@ export default function Shipping() {
   return (
     <Layout title="Shipping">
       <CheckoutWizard activeStep={1} />
-      <form
-        className={classes.form}
-        onSubmit={() => handleSubmit(submitHandler)}
-      >
+      <form className={classes.form} onSubmit={handleSubmit(submitHandler)}>
         <Typography variant="h1" component="h1">
           Register
         </Typography>
