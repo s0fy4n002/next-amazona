@@ -34,7 +34,7 @@ export default function Register() {
     if (userInfo) {
       router.push('/');
     }
-  }, []);
+  }, [router]);
 
   const submitHandler = async ({ email, name, password, confirmPassword }) => {
     closeSnackbar();

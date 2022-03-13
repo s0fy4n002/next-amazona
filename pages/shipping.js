@@ -38,7 +38,7 @@ export default function Shipping() {
     setValue('city', shippingAddress.city);
     setValue('postalCode', shippingAddress.postalCode);
     setValue('country', shippingAddress.country);
-  }, []);
+  }, [cartItems]);
 
   const submitHandler = async ({
     fullName,
